@@ -1,0 +1,122 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais do corpo da página */
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #b4c0d9;
+  color: #353a40;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos da área principal */
+main {
+  flex: 1;
+}
+
+/* Estilos do cabeçalho */
+header #cabecalhoDiv {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d6a9;
+}
+
+/* Estilos da imagem no cabeçalho */
+header img {
+  max-width: 2.5rem;
+}
+
+/* Estilos do título no cabeçalho */
+header h1 {
+  margin-left: 1rem;
+}
+
+/* Estilos do formulário de cadastro */
+#cadastro {
+  background-color: #ffffffce;
+  max-width: 30rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+/* Estilos do título do formulário de cadastro */
+#cadastro h2 {
+  text-transform: uppercase;
+}
+
+/* Estilos do formulário em si */
+form {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* Estilos das etiquetas do formulário */
+form label {
+  font-weight: 600;
+}
+
+/* Estilos dos campos de entrada do formulário */
+form input {
+  margin-bottom: 0.7rem;
+}
+
+/* Estilos do botão de cadastrar */
+button {
+  margin: 1.7rem 0;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #c5fcbff3;
+  text-transform: uppercase;
+}
+
+/* Estilos da mensagem final após o cadastro */
+#cadastro #msgFinal {
+  background-color: #767d8573;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  display: none;
+}
+
+/* Estilos do título e parágrafos na mensagem final */
+#cadastro #msgFinal h3 {
+  color: #1eff00;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#cadastro #msgFinal p {
+  color: #000000;
+  text-align: left;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+}
+
+/* Estilos do botão ao passar o mouse sobre ele */
+button:hover {
+  background-color: #85f277;
+  cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+  margin-top: auto;
+  background-color: #d9d6a9;
+  padding: 1rem;
+  font-size: 1.1rem;
+}

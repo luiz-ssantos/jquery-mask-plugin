@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Metadados -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon e Estilos -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Título da Página -->
+    <title>Formulário de Cadastro</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div id="cabecalhoDiv">
+        <img src="imagens/001.png" alt="Imagem formulário de cadastro" />
+        <h1>Formulário de Cadastro</h1>
+      </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+      <section id="cadastro">
+        <h2>Cadastro</h2>
+        <!-- Formulário de Cadastro -->
+        <form>
+          <!-- Campos de Entrada -->
+          <label for="nomeCompleto">Nome Completo:</label><br />
+          <input type="text" name="nomeCompleto" id="nomeCompleto" />
+          <br />
+          <label for="eMail">E-mail:</label><br />
+          <input type="email" name="eMail" id="eMail" />
+          <br />
+          <label for="telefone">Telefone:</label><br />
+          <input type="tel" name="telefone" id="telefone" />
+          <br />
+          <label for="cpf">CPF:</label><br />
+          <input type="text" name="cpf" id="cpf" />
+          <br />
+          <label for="enderecoCompleto">Endereço Completo:</label><br />
+          <input type="text" name="enderecoCompleto" id="enderecoCompleto" />
+          <br />
+          <label for="cep">CEP:</label><br />
+          <input type="text" name="cep" id="cep" />
+          <br />
+        </form>
+        <!-- Botão de Cadastro e Mensagem Final -->
+        <button type="submit" id="butaoCadastrar">Cadastrar</button>
+        <section id="msgFinal"></section>
+      </section>
+    </main>
+    <!-- Scripts (jQuery e Máscaras) -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="main.js"></script>
+    <!-- Rodapé -->
+    <footer>
+      <p>2024 &copy; Luiz Henrique Santos</p>
+    </footer>
+  </body>
+</html>
