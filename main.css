@@ -64,16 +64,17 @@ form {
 /* Estilos das etiquetas do formulário */
 form label {
   font-weight: 600;
+  /* margin-top: -10px; */
 }
 
-/* Estilos dos campos de entrada do formulário */
 form input {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 /* Estilos do botão de cadastrar */
 button {
-  margin: 1.7rem 0;
+  display: block;
+  margin: 1.7rem auto;
   padding: 0.7rem;
   font-size: 1rem;
   font-weight: 600;
@@ -81,6 +82,12 @@ button {
   border: none;
   background-color: #c5fcbff3;
   text-transform: uppercase;
+}
+
+/* Estilos do botão ao passar o mouse sobre ele */
+button:hover {
+  background-color: #85f277;
+  cursor: pointer;
 }
 
 /* Estilos da mensagem final após o cadastro */
@@ -93,7 +100,7 @@ button {
 
 /* Estilos do título e parágrafos na mensagem final */
 #cadastro #msgFinal h3 {
-  color: #1eff00;
+  color: #15a002;
   margin-top: 1rem;
   padding: 0.5rem;
   font-weight: 700;
@@ -107,10 +114,16 @@ button {
   font-size: 1.1rem;
 }
 
-/* Estilos do botão ao passar o mouse sobre ele */
-button:hover {
-  background-color: #85f277;
-  cursor: pointer;
+/* Estilo para mensagens de erro do jQuery Validation */
+label.error {
+  color: red;
+  margin-top: -0.7rem;
+  display: block;
+}
+
+/* Estilo para o campo com erro */
+input.error {
+  border: 1px solid red;
 }
 
 /* Estilos do rodapé */

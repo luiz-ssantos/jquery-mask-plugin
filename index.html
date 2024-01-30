@@ -25,35 +25,82 @@
       <section id="cadastro">
         <h2>Cadastro</h2>
         <!-- Formulário de Cadastro -->
-        <form>
+        <form id="formComentario">
           <!-- Campos de Entrada -->
           <label for="nomeCompleto">Nome Completo:</label><br />
-          <input type="text" name="nomeCompleto" id="nomeCompleto" />
+          <input
+            type="text"
+            name="nomeCompleto"
+            id="nomeCompleto"
+            placeholder="Digite seu nome.."
+            size="30"
+            required
+          />
           <br />
           <label for="eMail">E-mail:</label><br />
-          <input type="email" name="eMail" id="eMail" />
+          <input
+            type="email"
+            name="email"
+            id="eMail"
+            placeholder="Digite seu E-mail.."
+            size="30"
+            required
+          />
           <br />
           <label for="telefone">Telefone:</label><br />
-          <input type="tel" name="telefone" id="telefone" />
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="(00) 0.0000-0000"
+            size="30"
+            required
+          />
           <br />
           <label for="cpf">CPF:</label><br />
-          <input type="text" name="cpf" id="cpf" />
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            placeholder="000.000.000-00"
+            size="30"
+            required
+          />
           <br />
           <label for="enderecoCompleto">Endereço Completo:</label><br />
-          <input type="text" name="enderecoCompleto" id="enderecoCompleto" />
+          <input
+            type="text"
+            name="enderecoCompleto"
+            id="enderecoCompleto"
+            placeholder="Rua Principal, N.001, Centro, Casa.."
+            size="30"
+            required
+          />
           <br />
           <label for="cep">CEP:</label><br />
-          <input type="text" name="cep" id="cep" />
+          <input
+            type="text"
+            name="cep"
+            id="cep"
+            placeholder="00000-000"
+            size="30"
+            required
+          />
           <br />
+          <!-- Botão de Cadastro -->
+          <button type="submit" id="butaoCadastrar">Cadastrar</button>
         </form>
-        <!-- Botão de Cadastro e Mensagem Final -->
-        <button type="submit" id="butaoCadastrar">Cadastrar</button>
+        <!-- Mensagem Final -->
         <section id="msgFinal"></section>
       </section>
     </main>
     <!-- Scripts (jQuery e Máscaras) -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- Inclusão do Plugin jQuery Validation-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <!-- <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script> -->
     <!-- Script Personalizado -->
     <script src="main.js"></script>
     <!-- Rodapé -->
